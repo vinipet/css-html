@@ -74,6 +74,11 @@
 }
 
 
+section p {
+   padding-bottom: 2em;
+}
+
+
 section.normal{
    background-color: white;
    color: black;
@@ -83,6 +88,8 @@ section.normal{
 section.imagem{
 background-color: rgba(51, 51, 51, );
 color: white;
+box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.382);
+background-attachment: fixed;
 
 }
 
@@ -90,7 +97,22 @@ color: white;
 section.imagem > p {
    display: inline-block;
    padding: 10px;
-   background-color: rgba(0, 0, 0, 0.253);
+   background-color: rgba(0, 0, 0, 0.5);
+   text-shadow: 1px 1px 0px black;
+}
+
+
+section#img01 {
+   background-image: url(../imagens/background001.jpg);
+   background-position: right center;
+   background-size: cover;
+}
+
+
+section#img02 {
+   background-image: url(../imagens/background002.jpg);
+   background-position: right center;
+   background-size: cover;
 }
  
 
