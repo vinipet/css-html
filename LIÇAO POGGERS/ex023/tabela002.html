@@ -11,7 +11,7 @@
       }
 
       table {
-         
+         border-collapse: collapse;
       } 
 
       td, th {
@@ -24,6 +24,12 @@
          background-color: gray;
          color: white;
       }
+      .num{
+         text-align: right;
+      }
+      .position {
+         text-align: center;
+      }
    </style>
 </head>
 <body>
@@ -34,101 +40,101 @@
    <caption> População das unidades Federativas</caption>
    <thead>
       <tr>
-         <th>posição</th>
-         <th>Estado</th>
-         <th>População (senso de 2022)</th>
-         <th>População (senso de 2010)</th>
-         <th>mudança</th>
-         <th>% da Pop. total</th>
-         <th>país comparável (habitantes)</th>
+         <th scope="col">posição</th>
+         <th scope="col">Estado</th>
+         <th scope="col">População (senso de 2022)</th>
+         <th scope="col">População (senso de 2010)</th>
+         <th scope="col">mudança</th>
+         <th scope="col">% da Pop. total</th>
+         <th scope="col">país comparável (habitantes)</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td>1</td>
-         <td>São Paulo</td>
-         <td>44 420 459</td>
-         <td>41 262 199</td>
+         <td class="position">1</td>
+         <td class="Estado" >São Paulo</td>
+         <td class="num">44 420 459</td>
+         <td class="num">41 262 199</td>
          <td>+7.65%</td>
          <td>22,2%</td>
          <td>Espanha (46 754 778)</td>
       </tr>
       <tr>
-         <td>2</td>
-         <td>Minas Gerais</td>
-         <td>20 538 718</td>
-         <td>19 597 330</td>
+         <td class="position">2</td>
+         <td class="Estado">Minas Gerais</td>
+         <td class="num">20 538 718</td>
+         <td class="num">19 597 330</td>
          <td>+4.8%</td>
          <td>10,0%</td>
          <td>Burquina Fasso (20 903 273)</td>
       </tr>
       <tr>
-         <td>3</td>
-         <td>Rio De Janeiro</td>
-         <td>16 054 524	</td>
-         <td>15 989 929</td>
+         <td class="position">3</td>
+         <td class="Estado">Rio De Janeiro</td>
+         <td class="num">16 054 524	</td>
+         <td class="num">15 989 929</td>
          <td>+0.4%</td>
          <td>8,0%</td>
          <td>Camboja (16 718 965)</td>
       </tr>
       <tr>
-         <td>4</td>
-         <td>Bahia</td>	
-         <td>14 136 417</td>
-         <td>14 016 906	</td>
+         <td class="position">4</td>
+         <td class="Estado">Bahia</td>	
+         <td class="num">14 136 417</td>
+         <td class="num">14 016 906	</td>
          <td>+0.85%</td>
          <td>7,1%</td>
          <td>Zimbabwe (14 862 924)</td>
       </tr>
       <tr>
-         <td>5</td>
-         <td>Paraná</td>
-         <td>11 443 208</td>
-         <td>10 444 526	</td>
+         <td class="position">5</td>
+         <td class="Estado">Paraná</td>
+         <td class="num">11 443 208</td>
+         <td class="num">10 444 526	</td>
          <td>+9.56%</td>
          <td>5,7%</td>
          <td>Tunísia (11 818 619)</td>
       </tr> 
       <tr>
-         <td>6</td>
-         <td> Rio Grande do Sul</td>
-         <td>10 880 506	</td>
-         <td>10 693 929</td>
+         <td class="position">6</td>
+         <td class="Estado"> Rio Grande do Sul</td>
+         <td class="num">10 880 506	</td>
+         <td class="num">10 693 929</td>
          <td>+1.74%</td>
          <td>5,3%</td>
          <td> Cuba (11 326 616)</td>
       </tr> 
       <tr>
-         <td>7</td>
-         <td> Pernambuco</td>
-         <td>9 058 155	</td>
-         <td>8 796 448	</td>
+         <td class="position">7</td>
+         <td class="Estado"> Pernambuco</td>
+         <td class="num">9 058 155	</td>
+         <td class="num">8 796 448	</td>
          <td>+2.98%</td>
          <td>4,4%</td>
          <td> Áustria (9 006 398)</td>
       </tr>
        <tr>
-         <td>8</td>
-         <td>Ceará</td>
-         <td>8 791 688	</td>
-         <td>8 452 381	</td>
+         <td class="position">8</td>
+         <td class="Estado">Ceará</td>
+         <td class="num">8 791 688	</td>
+         <td class="num">8 452 381	</td>
          <td>+4.01%</td>
          <td>4,3%</td>
          <td> Papua-Nova Guiné (8 947 024)</td>
       </tr>
        <tr>
-         <td>9</td>
-         <td>Pará</td>
-         <td>8 116 132</td>
-         <td>7 581 051	</td>
+         <td class="position">9</td>
+         <td class="Estado">Pará</td>
+         <td class="num">8 116 132</td>
+         <td class="num">7 581 051	</td>
          <td>+7.06%</td>
          <td>4,1%</td>
          <td> Suíça (8 654 622)</td>
       </tr> <tr>
-         <td>10</td>
-         <td>Santa Catarina</td>
-         <td>7 609 601</td>
-         <td>6 248 436	</td>
+         <td class="position">10</td>
+         <td class="Estado">Santa Catarina</td>
+         <td class="num">7 609 601</td>
+         <td class="num">6 248 436	</td>
          <td>+21.78%</td>
          <td>3,7%</td>
          <td> Paraguai (7 132 538)</td>
@@ -136,8 +142,11 @@
    </tbody>
    <tfoot>
       <tr>
-         <td>Total de habitantes</td>
-         <td>0000</td>
+         <td></td>
+         <th scope="row">Total de habitantes</td>
+         <th>151049408</td>
+         <th >143083135</td>
+         
       </tr>
    </tfoot>
 </table>
