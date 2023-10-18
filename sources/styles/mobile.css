@@ -4,7 +4,7 @@
 {
    --azul: #0772eb;
    --preto:#131416;
-   --preto_claro:#313648;
+   --Preto_Claro:#313648;
 }
 
 *
@@ -22,9 +22,14 @@ body
    font-family: Arial, Helvetica, sans-serif;
 }
 
+h1.title
+{
+   margin-top:20px;
+}
+
 h1
 {
-   margin-top: 40px;
+   margin-bottom: 20px;
    text-transform: uppercase;
 }
 
@@ -41,9 +46,24 @@ div.conteudos
 {
    display: block;
    margin: 30px auto ;
-   background-color: var(--preto_claro);
+   background-color: var(--Preto_Claro);
    width: 200px;
    border-radius: 20px;
+   padding-top: 20px;
+}
+
+
+div.conteudos:hover
+{
+   background-color: var(--azul);
+   box-shadow: 0px 0px 20px var(--azul);
+   transition: .5s;
+
+}
+a
+{
+   text-decoration: none;
+   color: white;
 }
 
 p
@@ -55,5 +75,6 @@ p
 
 img
 {
-
+   border-radius:10px;
+   height: 100px;
 }
