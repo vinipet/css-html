@@ -18,6 +18,7 @@
 div.conteudo
 {
    width: auto;
+   overflow: hidden;
 }
 
 iframe
