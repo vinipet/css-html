@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+:root
+{
+   --azul: #0772eb;
+   --preto:#131416;
+   --Preto_Claro:#313648;
+}
+
+*
+{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+
+div.conteudo
+{
+   width: auto;
+}
+
+iframe
+{
+   width: auto;
+}
+
+a
+{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+   background-color: var(--azul);
+   border-radius: 15px;
+   width: min-content;
+   margin: 10px auto;
+   height: 30px;
+}
+
+

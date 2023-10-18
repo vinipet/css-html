@@ -12,6 +12,7 @@
    margin: 0px;
    padding: 0px;
    box-sizing: border-box;
+   overflow: hidden;
 }
 
 body
@@ -42,7 +43,7 @@ section
    align-content: center;
 }
 
-div.conteudos
+div.conteudos, .conteudo
 {
    display: block;
    margin: 30px auto ;
