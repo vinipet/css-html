@@ -12,7 +12,6 @@
    margin: 0px;
    padding: 0px;
    box-sizing: border-box;
-   overflow: hidden;
 }
 
 div.conteudo
@@ -39,4 +38,13 @@ a
    height: 30px;
 }
 
+a:hover
+{
+   box-shadow: inset 0px 0px 10px black;
+}
 
+.botao
+{
+   font-size: medium;
+   margin: 0px 10px 0px 0px;
+}
