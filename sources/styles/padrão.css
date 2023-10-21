@@ -66,6 +66,11 @@ a
    color: white;
 }
 
+p.icone
+{
+   font-size: 70px;
+}
+
 p
 {
    text-align: center;
