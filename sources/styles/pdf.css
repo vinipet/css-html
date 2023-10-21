@@ -1,0 +1,19 @@
+.icone
+{
+   font-size: 70px;
+}
+
+.material-symbols-outlined
+{
+   margin: 30px 1px;
+   transition: .3s;
+}
+
+.material-symbols-outlined:hover
+{
+   background-color: var(--azul);
+   color: black;
+   border-radius: 8px;
+   transition: .3s;
+   font-size: calc(80px);
+}
