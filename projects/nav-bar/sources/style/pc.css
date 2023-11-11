@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   font-family: Outfit;
+}
+
+#open,#close{
+   display: none;
+}
+
+#sla{
+   display: none;
+}
+
+#responsivo{
+   display: none;
+}
+
+#principal{
+   display: flex;
+}
+
+body{
+   height: max-content;
+   background: rgb(95, 95, 95) url(../images/fuji-gr.jpg ) no-repeat fixed;
+}
+
+div#nav-div{
+   position: fixed;
+   top: 0;
+   width: 100vw;   
+   height: 60px;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 20px 0px  50px  ;
+   align-items: flex-end;
+}
+
+.ico{
+   height: 50px;
+}
+
+nav{
+   vertical-align: baseline;
+}
+
+nav > a{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: black;
+   font-size: 25px;
+   margin:  10px;
+
+   transition: .3s;
+}
+
+nav > a:hover{
+   color: white;
+   background-color: black;
+   border-radius: 8px;
+   
+   transition: .3s;
+}
+
+section{
+   margin: 70px auto ;
+   padding: 30px;
+   background-color: rgba(123, 123, 123, 0.567);
+   max-width: 600px;
+}
