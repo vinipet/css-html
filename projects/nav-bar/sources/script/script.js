@@ -1,16 +1,25 @@
+class MobileNavbar{
+   constructor(navLinks,navList,mobileMenu){
+      this.mobileMenu  = document.querySelector('mobileMenu')
+      this.navList = document.querySelector('navList')
+      this.navLinks = document.querySelector('navLinks')
+      this.activeClass = "active"
+   }
 
-var close = document.getElementById('close')
+   addClickEvent(){
+      this.mobileMenu.addEventListener("click", () => console.log("penis"))
+   }
 
-function abrir()
-{
-   var respo = document.getElementById('responsivo')
-   respo.style.opacity = 100
-   respo.style.pointerEvents = "all"
+   init(){
+      if (this.mobileMenu){
+         this.addClickEvent()
+      }
+      return this
+   }
 }
 
-function fechar()
-{
-   var respo = document.getElementById('responsivo')
-   respo.style.opacity = 0
-   respo.style.pointerEvents = "none"
-}
+const mobileNavbar = new MobileNavbar(
+   ".mobile-menu",
+   ".nav-list",
+   ".nav-list li",
+)
