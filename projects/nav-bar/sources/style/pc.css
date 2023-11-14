@@ -94,6 +94,20 @@ nav{
 
 }
 
-.nav-list.active {
+.active {
    transform: translateX(0);
+   opacity: 1;
+}
+
+.btn{
+   background-color: #23232e;
+   border: none;
+   color: white;
+   transition: .3s;
+}
+
+.btn:hover{
+   transition: .3s;
+   color: #23232e;
+   background-color: white;
 }
