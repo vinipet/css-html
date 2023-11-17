@@ -6,6 +6,7 @@
    margin: 0px;
    box-sizing: border-box;
    font-family: Outfit;
+   
 }
 
 
@@ -13,6 +14,13 @@ body{
    height: max-content;
    background: rgb(95, 95, 95) url(../images/fuji-gr.jpg ) no-repeat fixed;
    overflow-x: hidden;
+}
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
 }
 
 section{
@@ -57,7 +65,7 @@ nav{
    margin-left: 32px;
 }
 
-.mobile-menu{
+#btn{
    cursor: pointer;
    display: none;
 }
@@ -71,7 +79,7 @@ nav{
 
 @media (max-width: 999px){
    .nav-list{
-      position: absolute;
+      position: fixed;
       top: 8vh;
       right: 0;
       width: 50vw;
@@ -81,11 +89,16 @@ nav{
       align-items: center;
       justify-content: space-around;
       transform: translate(100%);
+      transition: .3s;
+   }
+
+   #btn{
+      display: block;
    }
 
    .nav-list li {
       margin-left: 0px;
-      opacity: 0;
+     
    }
 
    .mobile-menu{
@@ -95,6 +108,13 @@ nav{
 }
 
 .active {
+   transform: translateX(0);
+   opacity: 1;
+   pointer-events: all;
+   transition: .3s;
+}
+.active:only-child{
+   pointer-events: all;
    transform: translateX(0);
    opacity: 1;
 }
