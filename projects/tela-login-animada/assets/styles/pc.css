@@ -28,7 +28,7 @@ h1{
 .principal{
    display: flex;
    flex-direction: row;
-   background-image: linear-gradient(130deg, rgb(196, 96, 96), rgb(173, 95, 172));
+  
    height: 70%;
    border-radius: 12px;
    box-shadow: rgba(0, 0, 0, 0.322) 3px 6px 9px 0px;
@@ -42,18 +42,6 @@ h1{
 }
 
 
-#left{
-   color: white;
-   text-align: center;
-   justify-content: center;
-   flex-direction: column;
-   display: flex;
-   width: 50%;
-   padding: 40px;
-   align-items: center;
-   transition: .3s;
-   
-}
 
 #left > h1{
    margin: 25px 0px;
@@ -79,16 +67,18 @@ button:active{
    transform: scale(.90);
 }
 
-#right{
+.content{
+   z-index:  0;
    text-align: center;
    justify-content: center;
    flex-direction: column;
    display: flex;
    width: 50%;
    background-color: white;
-   border-radius: 0px 12px 12px 0px;
+   border-radius:  12px ;
    padding: 40px;
    transition: .3s;
+   align-items: center;
 }
 
 #right > h1{
@@ -96,7 +86,7 @@ button:active{
 }
 
 .icons{
-   border: solid black 1px;
+   border: solid rgba(0, 0, 0, 0.161) 1px;
    border-radius: 100%;
    padding: 16px 10px 0px 10px;
    width: 50px;
@@ -128,8 +118,21 @@ form > p{
    width: 70%;
 }
 
-#btnSenha{
+.btnSenha{
    width: 10%;
    height: 25px;
    background: none;
+}
+
+a{
+   color: rgba(0, 0, 0, 0.649);
+   text-decoration: none;
+}
+
+#up-content{
+   background-image: linear-gradient(130deg, rgb(196, 96, 96), rgb(173, 95, 172));
+   z-index: 4;
+   position: relative;
+   width: 100%;
+   left: 0;
 }
