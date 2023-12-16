@@ -1,7 +1,7 @@
 
 // numeros para a escolha
 let array = []
-for(c=1;c<101;c++)
+for(c=1;c<102;c++)
 {
    array[c]=c
 }
