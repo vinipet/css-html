@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Akinumero</title>
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <section id="conteiner">
+      
+      <div id="tentativas">
+         <div class="tentativa" id="tent1"></div>
+         <div class="tentativa" id="tent2"></div>
+         <div class="tentativa" id="tent3"></div>
+         <div class="tentativa" id="tent4"></div>
+         <div class="tentativa" id="tent5"></div>
+      </div>
+
+      <div id="iterativo">
+         <button id="maior" class="material-symbols-outlined btn">
+               arrow_upward
+         </button>
+         <button id="acerto" class="material-symbols-outlined btn" onclick="modal()">
+            done_outline
+         </button>
+         <button id="menor" class="material-symbols-outlined btn">
+            arrow_downward
+         </button>
+      </div>
+
+      <div id="resto">
+         <h1>Pense em um numero de 0 a 100</h1>
+
+         <div id="res">
+            
+         </div>
+      </div>
+
+   </section>
+
+   <section id="modal" class="ativo">
+      <div id="cont-modal">
+         <h1>Seu número é:</h1>
+         <p id="res-modal"></p>
+         <button onclick="modal()">fechar</button>
+      </div>
+   </section>
+
+   <script src="script.js"></script>
+</body>
+</html>
