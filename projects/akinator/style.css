@@ -63,6 +63,10 @@ h1{
 
 #res{
    border-radius: 0px;
+   width: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #res > p{

@@ -5,6 +5,9 @@ let reset = ()=>{
    {
       array[c]=c+1
    }
+   chutar()
+   tentativas = 1
+
 }
 let tentativas =1
 let chute
@@ -14,7 +17,11 @@ let erroValorExcedido = `Seu nùmero so pode ter o valor entre 1 e 100. Por favo
 let chutar = ()=>{
   chute =  array[Math.floor((array.length - 1) / 2)]
   document.querySelector('#res').innerHTML = `<p>Seu numero é ${chute}?</p>`
-  document.querySelector('#res-modal').innerHTML = `<h1>${chute}!!!</h1> <p>Acertei em ${tentativas} tentativas.</p>`
+  if(tentativas!=7){
+  document.querySelector('#res-modal').innerHTML = `<h1>${chute}!!!</h1> <p>Acertei em ${tentativas} tentativas.</p>`}else{
+  document.querySelector('#res-modal').innerHTML = `<h1>${chute}!!!</h1> <p>Acertei em ${tentativas} tentativas. O Número difícil esse em!!</p>`
+  }
+
 }
 // logica de acerto 
 let modal = ()=>{
@@ -38,8 +45,7 @@ let maior = document.querySelector('#maior').addEventListener('click', ()=>{
    for(let value = array.indexOf(chute +1); value != 0 ; value--){
       array.shift()
    }
-   tentativas ++
-   chutar()
+   akinator(tentativas)
    }
 })
 //logica de menor
@@ -50,14 +56,17 @@ let menor = document.querySelector('#menor').addEventListener('click', ()=>{
    for(let value = array.indexOf(chute+1); value != 0 ; value--){
       array.pop()
    }
-   tentativas ++
-   chutar()
+   akinator(tentativas)
    }
 })
 //akinator frames
-let akinator = ()=>{
-   
+let akinator = (valor)=>{
+   switch(valor){
+      case 1: break
+      case 2: // faça um loop for percorrendo todos as div tentativa e colorir apenas as igual ou menor a 2 repetir isso para os outros casos
+   }
+   chutar()
+   tentativas++
 }
 
 reset()
-chutar()
