@@ -7,7 +7,7 @@ let reset = ()=>{
    }
    chutar()
    tentativas = 1
-
+   
 }
 let tentativas =1
 let chute
@@ -61,10 +61,31 @@ let menor = document.querySelector('#menor').addEventListener('click', ()=>{
 })
 //akinator frames
 let akinator = (valor)=>{
+   let div1 = document.querySelector('#tent1')
+   let div2 = document.querySelector('#tent2')
+   let div3 = document.querySelector('#tent3')
+   let div4 = document.querySelector('#tent4')
+   let div5 = document.querySelector('#tent5')
+   let div6 = document.querySelector('#tent6')
    switch(valor){
-      case 1: break
-      case 2: // faça um loop for percorrendo todos as div tentativa e colorir apenas as igual ou menor a 2 repetir isso para os outros casos
+      case 1: div1.style.backgroundColor = 'green'
+         break
+      case 2: div2.style.backgroundColor = 'green'
+         break
+      case 3: div3.style.backgroundColor = 'green'
+         break
+      case 4: div4.style.backgroundColor = 'green'
+         break
+      case 5: div5.style.backgroundColor = 'green'
+         break
+      case 6: div6.style.backgroundColor = 'green'
+         break
+      case 7 : div1.style.backgroundColor = 'green'
+      
+      // faça um loop for percorrendo todos as div tentativa e colorir apenas as igual ou menor a 2 repetir isso para os outros casos
    }
+
+
    chutar()
    tentativas++
 }
