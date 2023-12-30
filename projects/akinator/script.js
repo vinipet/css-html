@@ -1,8 +1,6 @@
 let array = []
 let chute
 let tentativas =1
-let erroValorExcedido = `Seu nùmero so pode ter o valor entre 1 e 100. Por favor escolha um número dentro do escopo`
-
 
 let reset = ()=>{
    for(c=0;c<100;c++)
@@ -26,7 +24,6 @@ let chutar = ()=>{
      document.querySelector('#res-modal').innerHTML = `<h1>${chute}!!!</h1> <p>Acertei em ${tentativas} tentativas.</p>`}else{
   document.querySelector('#res-modal').innerHTML = `<h1>${chute}!!!</h1> <p>Acertei em ${tentativas} tentativas. O Número difícil esse em!!</p>`
 }
-
 }
  
 let modal = ()=>{
@@ -46,7 +43,7 @@ let modalClose = document.querySelector('#close').addEventListener('click', moda
 
 let maior = document.querySelector('#maior').addEventListener('click', ()=>{
    if(array.length == 1){
-      window.alert(erroValorExcedido)
+      window.alert('digite um valor valido')
    }else{
    for(let value = array.indexOf(chute +1); value != 0 ; value--){
       array.shift()
@@ -58,7 +55,7 @@ let maior = document.querySelector('#maior').addEventListener('click', ()=>{
 
 let menor = document.querySelector('#menor').addEventListener('click', ()=>{
    if(array.length == 1){
-      window.alert(erroValorExcedido)
+      window.alert('erro')
    }else{
    for(let value = array.indexOf(chute+1); value != 0 ; value--){
       array.pop()
