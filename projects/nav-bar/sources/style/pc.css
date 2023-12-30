@@ -28,7 +28,6 @@ section{
    padding: 30px;
    background-color: rgba(255, 255, 255, 0.056);
    max-width: 600px;
-   backdrop-filter:sepia(90%) ;
 }
 
 a {
@@ -91,6 +90,7 @@ nav{
       justify-content: space-around;
       transform: translate(100%);
       transition: .3s;
+      z-index: 2;
    }
 
    #btn{
@@ -111,11 +111,9 @@ nav{
 .active {
    transform: translateX(0);
    opacity: 1;
-   pointer-events: all;
    transition: .3s;
 }
 .active:only-child{
-   pointer-events: all;
    transform: translateX(0);
    opacity: 1;
 }
