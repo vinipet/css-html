@@ -36,11 +36,16 @@ h1
 section
 {
    margin: auto;
-   display: flex;
    flex-direction: column;
-   max-width: 600px;
-   align-content: center;
+   align-content: space-evenly;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   justify-items: center;
+   grid-template-columns: 20% 20% 20%;
+   column-gap: 10%;
 }
+
 
 div.conteudos, .conteudo
 {
@@ -83,4 +88,8 @@ img
    border-radius:10px;
    height: 100px;
    width: 100px;
+}
+
+#projetos{
+   grid-column-start: 2;
 }
