@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>canvas</title>
+   <style>
+      canvas{
+         border: 1px solid black;
+         background-color: white;
+         margin: 0 auto;
+         display: block;
+      }
+      body{
+         background-color: black;
+      }
+   </style>
+</head>
+<body>
+   <canvas id="desenho" width="500" height="500">
+
+   </canvas>
+
+
+
+   <script>
+      let canvas = document.getElementById('desenho')
+      let ctx = canvas.getContext('2d')
+      let X=Y=250
+      let altura=largura = 50
+      let angulo = 360
+      function desenho() {
+         ctx.clearRect(0,0,500,500)
+
+          ctx.arc(X, Y, 125, (Math.PI/180)*0, (Math.PI/180)*(angulo), false)
+          ctx.fill()
+
+         if(angulo!=0){
+            angulo--
+         }
+         let animacao = requestAnimationFrame(desenho)
+      }
+      desenho()
+   </script>
+</body>
+</html>
