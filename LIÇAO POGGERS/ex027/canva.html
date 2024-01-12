@@ -26,19 +26,15 @@
    <script>
       let canvas = document.getElementById('desenho')
       let ctx = canvas.getContext('2d')
-      let X=Y=250
-      let altura=largura = 50
-      let angulo = 360
+      
       function desenho() {
-         ctx.clearRect(0,0,500,500)
+      const pipe = new Image()
+      pipe.src = 'pipe.png'
 
-          ctx.arc(X, Y, 125, (Math.PI/180)*0, (Math.PI/180)*(angulo), false)
-          ctx.fill()
+      ctx.drawImage(pipe,0,0)
 
-         if(angulo!=0){
-            angulo--
-         }
-         let animacao = requestAnimationFrame(desenho)
+
+      let animacao = requestAnimationFrame(desenho)
       }
       desenho()
    </script>
