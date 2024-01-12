@@ -1,13 +1,8 @@
-const openModalButtom = document.querySelector('#open-modal')
-const closeModalButtom = document.querySelector('#close-modal')
-const modal = document.querySelector('#modal')
-const fade = document.querySelector('#fade')
+let modal = document.getElementById('modal-body')
 
-const toggleModal = () =>{
-   modal.classList.toggle('hide')
-   fade.classList.toggle('hide')
-}
-
-[openModalButtom, closeModalButtom, fade].forEach((el)=>{
-   el.addEventListener("click", ()=> toggleModal())
+const openModalButtom = document.querySelector('#open-modal').addEventListener('click', ()=>{
+   modal.showModal()
+})
+const closeModalButtom = document.querySelector('#close-modal').addEventListener('click', ()=>{
+   modal.close()
 })

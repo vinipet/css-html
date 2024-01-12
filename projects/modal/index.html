@@ -4,23 +4,22 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Modal</title>
-   <link rel="stylesheet" href="css/style.css">
    <script src="js/script.js" defer></script>
 </head>
 <body>
    <h1>JavaScript Modal</h1>
    <button id="open-modal">Abrir</button>
    <div id="fade" class="hide"></div>
-   <div id="modal" class="hide">
-      <div class="modal-header">
-         <h2>Este é o Modal </h2>
-         <button id="close-modal">Fechar</button>
-      </div>
-      <div class="modal-body">
-         
+   <dialog id="modal-body">
+      
+      <div id="modal" class="hide">
+         <div class="modal-header">
+            <h2>Este é o Modal </h2>
+            <button id="close-modal">Fechar</button>
+         </div>
          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nostrum dicta consequuntur omnis incidunt, perspiciatis fuga facilis voluptas eum quo voluptate sint dolorem qui! Doloribus asperiores nihil molestias vitae fugiat!</p>
          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nostrum dicta consequuntur omnis incidunt, perspiciatis fuga facilis voluptas eum quo voluptate sint dolorem qui! Doloribus asperiores nihil molestias vitae fugiat!</p>
-      </div>
+      </dialog>
    </div>
 
 </body>
